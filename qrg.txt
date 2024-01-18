@@ -1,0 +1,1 @@
+f 432.500 # Empfangsfrequenz für 70cm APRS
