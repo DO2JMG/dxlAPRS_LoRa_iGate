@@ -39,8 +39,7 @@ function startlorarx {
   echo "Starte lorarx"
 
   ${LORARX} -i ${fifopath}/lorapipe -f i16 -b 7 -v -s 12 -L 127.0.0.1:9702 -s 10 -v 2>&1 >> ${LOGFILE} &
-  #${LORARX} -i ${fifopath}/lorapipe -f i16 -b 7 -v -s 12 -L 127.0.0.1:9702 -c 5 2>&1 >> ${LOGFILE} &
-  
+
   lorarx_pid=$!
   echo $lorarx_pid > $PIDFILE
 }
